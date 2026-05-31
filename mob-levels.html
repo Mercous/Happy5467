@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tierborn Wilds | Система уровней мобов</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="pixel-bg"></div>
+    
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">✦ TIERBORN WILDS ✦</span>
+                <span class="logo-sub">ванильный плюс • честный крафт • сильные мобы</span>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">[Главная]</a></li>
+                <li><a href="crafts.html">[Крафты]</a></li>
+                <li><a href="mob-levels.html" class="active">[Уровни мобов]</a></li>
+                <li><a href="rules.html">[Правила]</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="page-header">
+            <h1>✦ СИСТЕМА УРОВНЕЙ МОБОВ ✦</h1>
+            <p>Каждый моб получает случайный уровень — от 1 до 100</p>
+        </div>
+
+        <section class="level-info">
+            <div class="level-description">
+                <p>На сервере <strong>Tierborn Wilds</strong> каждый моб получает случайный уровень от <span class="highlight">1 до 100</span>.</p>
+                <p>С каждым уровнем характеристики моба увеличиваются <strong>экспоненциально</strong>:</p>
+                <div class="formula-box">
+                    ❤️ Здоровье × <strong>(1.20)</strong><sup>уровень-1</sup><br>
+                    ⚔️ Урон × <strong>(1.15)</strong><sup>уровень-1</sup><br>
+                    ✨ Опыт × <strong>(1.25)</strong><sup>уровень-1</sup><br>
+                    🎁 Шанс лута × <strong>(1.10)</strong><sup>уровень-1</sup>
+                </div>
+            </div>
+
+            <div class="level-stats">
+                <div class="stat-card">
+                    <span class="stat-icon">❤️</span>
+                    <h3>Здоровье</h3>
+                    <p>Множитель: <span class="stat-value">×1.20</span> за уровень</p>
+                    <div class="stat-bar"><div class="stat-fill health-fill" style="width: 85%"></div></div>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-icon">⚔️</span>
+                    <h3>Урон</h3>
+                    <p>Множитель: <span class="stat-value">×1.15</span> за уровень</p>
+                    <div class="stat-bar"><div class="stat-fill damage-fill" style="width: 60%"></div></div>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-icon">✨</span>
+                    <h3>Опыт</h3>
+                    <p>Множитель: <span class="stat-value">×1.25</span> за уровень</p>
+                    <div class="stat-bar"><div class="stat-fill exp-fill" style="width: 90%"></div></div>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-icon">🎁</span>
+                    <h3>Шанс лута</h3>
+                    <p>Множитель: <span class="stat-value">×1.10</span> за уровень</p>
+                    <div class="stat-bar"><div class="stat-fill loot-fill" style="width: 50%"></div></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="levels-table-section">
+            <h2 class="section-title">✦ ДИАПАЗОНЫ УРОВНЕЙ ✦</h2>
+            
+            <div class="levels-container">
+                <div class="level-category range-1-30">
+                    <h3>🟢 УРОВНИ 1–30</h3>
+                    <div class="level-scale-large">
+                        <div class="level-marker-small">1</div>
+                        <div class="level-marker-small">2</div>
+                        <div class="level-marker-small">3</div>
+                        <div class="level-marker-small">...</div>
+                        <div class="level-marker-small">28</div>
+                        <div class="level-marker-small">29</div>
+                        <div class="level-marker-small">30</div>
+                    </div>
+                    <p class="level-desc">
+                        <span class="danger-indicator"></span> <strong>Начальный уровень сложности</strong><br>
+                        Рекомендуемая экипировка: железная броня и оружие
+                    </p>
+                </div>
+
+                <div class="level-category range-31-60">
+                    <h3>🟡 УРОВНИ 31–60</h3>
+                    <div class="level-scale-large">
+                        <div class="level-marker-small">31</div>
+                        <div class="level-marker-small">32</div>
+                        <div class="level-marker-small">33</div>
+                        <div class="level-marker-small">...</div>
+                        <div class="level-marker-small">58</div>
+                        <div class="level-marker-small">59</div>
+                        <div class="level-marker-small">60</div>
+                    </div>
+                    <p class="level-desc">
+                        <span class="danger-indicator danger-medium"></span> <strong>Средний уровень сложности</strong><br>
+                        Рекомендуемая экипировка: алмазное снаряжение и базовые зачарования
+                    </p>
+                </div>
+
+                <div class="level-category range-61-100">
+                    <h3>🔴 УРОВНИ 61–100</h3>
+                    <div class="level-scale-large">
+                        <div class="level-marker-small">61</div>
+                        <div class="level-marker-small">62</div>
+                        <div class="level-marker-small">63</div>
+                        <div class="level-marker-small">...</div>
+                        <div class="level-marker-small">98</div>
+                        <div class="level-marker-small">99</div>
+                        <div class="level-marker-small">100</div>
+                    </div>
+                    <p class="level-desc">
+                        <span class="danger-indicator danger-high"></span> <strong>Высокий уровень сложности</strong><br>
+                        Рекомендуемая экипировка: незеритовое снаряжение с максимальными зачарованиями
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Найдите в mob-levels.html секцию с таблицей и добавьте wrapper -->
+<section class="loot-info">
+    <h2 class="section-title">✦ МНОЖИТЕЛИ ХАРАКТЕРИСТИК ✦</h2>
+    <div class="stats-table-wrapper">  <!-- Добавьте эту строку -->
+        <table class="stats-table">
+            <thead>
+                <tr>
+                    <th>Уровни</th>
+                    <th>Множитель здоровья</th>
+                    <th>Множитель урона</th>
+                    <th>Множитель опыта</th>
+                    <th>Множитель лута</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>1–30</strong></td>
+                    <td>×1 – ×237</td>
+                    <td>×1 – ×111</td>
+                    <td>×1 – ×807</td>
+                    <td>×1 – ×19</td>
+                </tr>
+                <tr>
+                    <td><strong>31–60</strong></td>
+                    <td>×237 – ×56,475</td>
+                    <td>×111 – ×12,619</td>
+                    <td>×807 – ×652,700</td>
+                    <td>×19 – ×371</td>
+                </tr>
+                <tr>
+                    <td><strong>61–100</strong></td>
+                    <td>×56,475 – ×∞</td>
+                    <td>×12,619 – ×∞</td>
+                    <td>×652,700 – ×∞</td>
+                    <td>×371 – ×∞</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>  <!-- Добавьте эту строку -->
+    <p class="level-desc" style="text-align: center; margin-top: 1rem; font-size: 0.5rem;">
+        * Множители указаны относительно базовых значений моба 1 уровня и не являются полными
+    </p>
+</section>
+
+        <div class="note-box" style="margin-top: 2rem;">
+            <p>🎲 Уровень моба определяется <strong>случайным образом</strong> при появлении.</p>
+            <p>⚡ Чем выше уровень — тем больше опыта и лучше шанс лута.</p>
+            <p>👥 Для фарма высокоуровневых мобов (60+) настоятельно рекомендуется собирать группу.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>✦ TIERBORN WILDS — 2026. Ванильный плюс. ✦</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
